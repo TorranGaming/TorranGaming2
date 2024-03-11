@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+header {
+    padding: 0;
+    
+    margin: 0;
+    
+    text-align: center;
+    
+    color: #fff;
+    
+    background-color: #1e847f;
+    
+}
+body {
+    padding: 0;
+
+    margin: 0;
+
+    background-color: #3b4351;
+}
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+   text-decoration: none;
+   
+   margin: 10%;
+   
+   color: #fff;  
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #3b4351;
+}
+
+.content {
+    background-color: #fff;
+    border-radius: 15px;
+    width: 80%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content::before {
+    content: "";
+    position: absolute;
+    background-color: #1e847f;
+    width: 40%;
+    height: 50%;
+}
+
+.first-column {
+    text-align: center;
+    flex: 1 0 auto;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+}
+
+.second-column {
+    flex: 2 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.btn-login {
+    border-radius: 15px;
+    text-transform: uppercase;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 150px;
+    align-self: center;
+    transition: background-color 1s;
+}
+
+.btn-login:hover{
+    color: #fff;
+    background-color: slategrey;
+    
+}
+
+.btn-criar {
+    border-radius: 15px;
+    text-transform: uppercase;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 150px;
+    align-self: center;
+    transition: background-color 1s;
+}
+
+.btn-criar:hover{
+    color: #fff;
+    background-color: slategrey;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+
+.form input {
+    height: 45px;
+    margin: 8px;
+    }
+</style>
+<body>
+    <header> <h1>UniAny</h1></header><hr>  
+    <div id="section">
+
+        <a href="secao1">Cadastro</a>
+
+        <a href="secao2">Alteração</a>
+
+        <a href="secao3">Inclusão</a>
+
+        <a href="secao4">Exclusão</a>
+
+    </div><hr>
+    <d  iv class="container">
+        <div class="content">
+            <div class="first-column">
+                <h2 class="title">Bem Vindo</h2>
+                
+                <p class="description">Para melhores informações</p>
+                
+                <p class="description">Realize o login abaixo</p>
+                
+                <button class="btn-login">Login</button>
+
+            </div>
+
+            <div class="second-column">
+
+                <h2 class="title">Crie uma Conta</h2>
+            
+                <p class="description">Preencha as informações abaixo</p>
+
+                <form class="form">
+                    
+                    <input type="text" placeholder="Nome">
+                    
+                    <input type="email" placeholder="Email">
+
+                    <input type="password" placeholder="Senha">
+
+                    <button class="btn-criar">Criar</button>       
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
